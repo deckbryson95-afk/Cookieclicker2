@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Clicker Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background-color: #f0f2f5; }
+        button { padding: 15px 25px; font-size: 18px; margin: 10px; cursor: pointer; border-radius: 8px; border: none; }
+        #clickBtn { background-color: #4CAF50; color: white; font-weight: bold; }
+        #upgradeBtn { background-color: #008CBA; color: white; }
+        #upgradeBtn:disabled { background-color: #cccccc; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+
+    <h1>Cookie Clicker Mini</h1>
+    <h2 id="scoreDisplay">Cookies: 0</h2>
+    <p id="clickValueDisplay">Cookies per click: 1</p>
+
+    <button id="clickBtn">🍪 Click Me!</button>
+    <br>
+    <button id="upgradeBtn" disabled>Buy Multiplier (Cost: 10)</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
