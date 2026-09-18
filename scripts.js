@@ -5,7 +5,7 @@ let upgradeCost = 10;
 // Get HTML elements
 const scoreDisplay = document.getElementById('scoreDisplay');
 const clickValueDisplay = document.getElementById('clickValueDisplay');
-const clickBtn = document.getElementById('clickBtn');
+const cookieBtn = document.getElementById('cookieBtn'); // Matches the new cookie ID
 const upgradeBtn = document.getElementById('upgradeBtn');
 
 // Function to update the text and check if player can buy upgrades
@@ -22,8 +22,8 @@ function updateUI() {
     }
 }
 
-// When you click the main game button
-clickBtn.addEventListener('click', () => {
+// When you click the giant cookie
+cookieBtn.addEventListener('click', () => {
     score += cookiesPerClick;
     updateUI();
 });
